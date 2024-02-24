@@ -42,8 +42,7 @@ public class ECommercePage {
 
 		Action ac1 = acts.keyDown(Keys.PAGE_DOWN).build();
 		ac1.perform();
-
-		driver.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[5]/div/div/div/div/span/div/div/div[2]/div[2]/h2/a/span")).click();
+                driver.findElement(By.partialLinkText("SUGAR Cosmetics Matte")).click();
 		Thread.sleep(2000);
 
 		String str = driver.getWindowHandle();
